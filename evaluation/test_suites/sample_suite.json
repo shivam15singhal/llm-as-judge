@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "input": "What is Python?",
+        "system_prompt": "Answer briefly.",
+        "expected_output": "Python is a programming language.",
+        "candidate_output": "Python is a programming language used for many applications."
+    },
+    {
+        "id": 2,
+        "input": "Capital of France?",
+        "system_prompt": "Answer briefly.",
+        "expected_output": "Paris",
+        "candidate_output": "Paris is the capital of France."
+    }
+]
