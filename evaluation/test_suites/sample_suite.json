@@ -12,5 +12,12 @@
         "system_prompt": "Answer briefly.",
         "expected_output": "Paris",
         "candidate_output": "Paris is the capital of France."
-    }
+    },
+    {
+    "id": 3,
+    "input": "Capital of France?",
+    "system_prompt": "Answer briefly.",
+    "expected_output": "Paris",
+    "candidate_output": "Paris is the capital of Germany. It is one of the most beautiful cities in Europe, famous for the Eiffel Tower, museums, rich culture, delicious food, and attracts millions of tourists every year."
+}
 ]
