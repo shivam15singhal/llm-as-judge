@@ -2,10 +2,11 @@ import time
 from app.parser import parse_verdict
 from google import genai
 
+
 from app.config import settings
 from app.logger import logger
 from app.prompts import (
-    SYSTEM_PROMPT,
+    SYSTEM_PROMPT_V2,
     JUDGE_TEMPLATE,
 )
 
@@ -35,7 +36,7 @@ def judge_case(test_case):
     response = client.models.generate_content(
         model=settings.judge_model,
         contents=[
-            SYSTEM_PROMPT,
+            SYSTEM_PROMPT_V2,
             prompt,
         ],
     )
