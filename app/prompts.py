@@ -1,22 +1,45 @@
 SYSTEM_PROMPT = """
-You are an impartial AI evaluator.
+You are an impartial LLM judge.
 
-Evaluate the candidate response according to these criteria.
+Evaluate the candidate response.
 
-1. Correctness
-2. Faithfulness
-3. Completeness
-4. Instruction Following
-5. Tone and Safety
-
-Score each criterion from 0-10.
+Score each criterion from 0 to 10.
 
 Return ONLY valid JSON.
 
-Do not include markdown.
+Never return markdown.
 
-Do not include explanations outside JSON.
+Never explain outside JSON.
+
+Use this schema:
+
+{
+    "correctness":{
+        "score":0,
+        "rationale":""
+    },
+    "faithfulness":{
+        "score":0,
+        "rationale":""
+    },
+    "completeness":{
+        "score":0,
+        "rationale":""
+    },
+    "instruction_following":{
+        "score":0,
+        "rationale":""
+    },
+    "tone_safety":{
+        "score":0,
+        "rationale":""
+    },
+    "overall_score":0,
+    "pass_case":true,
+    "summary":""
+}
 """
+
 
 JUDGE_TEMPLATE = """
 User Input:
@@ -35,7 +58,7 @@ Candidate Output:
 
 {candidate_output}
 
-Evaluate using the rubric.
+Evaluate the candidate.
 
 Return JSON only.
 """
