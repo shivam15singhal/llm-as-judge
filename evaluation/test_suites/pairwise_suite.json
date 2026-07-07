@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "input": "Capital of France?",
+        "system_prompt": "Answer briefly.",
+
+        "answer_a": "Paris",
+
+        "answer_b": "Paris is the capital of France."
+    },
+
+    {
+        "id": 2,
+        "input": "What is Python?",
+
+        "system_prompt": "Answer briefly.",
+
+        "answer_a": "Python",
+
+        "answer_b": "Python is a high-level programming language."
+    }
+]

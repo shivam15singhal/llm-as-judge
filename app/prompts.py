@@ -62,3 +62,31 @@ Evaluate the candidate.
 
 Return JSON only.
 """
+
+PAIRWISE_PROMPT = """
+You are comparing TWO candidate responses.
+
+Return ONLY JSON.
+
+{{
+    "winner":"A",
+    "confidence":0,
+    "reason":""
+}}
+
+User Input:
+
+{input}
+
+System Prompt:
+
+{system_prompt}
+
+Candidate A:
+
+{answer_a}
+
+Candidate B:
+
+{answer_b}
+"""

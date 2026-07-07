@@ -1,5 +1,5 @@
 import time
-
+from app.parser import parse_verdict
 from google import genai
 
 from app.config import settings
@@ -65,4 +65,6 @@ def judge_case(test_case):
     logger.info("RAW RESPONSE")
     logger.info(raw_response)
 
-    return raw_response
+    verdict = parse_verdict(raw_response)
+
+    return verdict

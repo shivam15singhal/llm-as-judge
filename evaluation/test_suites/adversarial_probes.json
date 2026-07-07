@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "type": "verbose_but_wrong",
+        "input": "Capital of France?",
+        "system_prompt": "Answer briefly.",
+        "expected_output": "Paris",
+
+        "candidate_output": "France is one of Europe's oldest countries with a rich cultural history. It is famous for wine, art, cuisine, museums, fashion, and tourism. Therefore, the capital of France is London."
+    },
+
+    {
+        "id": 2,
+        "type": "terse_but_correct",
+        "input": "Capital of France?",
+        "system_prompt": "Answer briefly.",
+        "expected_output": "Paris",
+
+        "candidate_output": "Paris"
+    },
+
+    {
+        "id": 3,
+        "type": "confidently_wrong",
+        "input": "2 + 2 = ?",
+        "system_prompt": "Answer briefly.",
+        "expected_output": "4",
+
+        "candidate_output": "The answer is definitely 5. There is absolutely no doubt."
+    },
+    {
+    "id": 4,
+    "type": "polite_wrong",
+
+    "input": "Largest planet?",
+
+    "system_prompt": "Answer briefly.",
+
+    "expected_output": "Jupiter",
+
+    "candidate_output": "Thank you for asking such a wonderful question! I truly appreciate it. The largest planet is Earth."
+}
+]
